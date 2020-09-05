@@ -1,0 +1,65 @@
+#page{
+    background-color: #FFF;
+    border-top: 7px solid #64c7ee;
+    float: right;
+    max-width: 670px;
+    margin-top: -230px;
+}
+.pesq{
+    text-align: center;
+   }
+   h2 {
+       text-align: center;
+   }
+   .YT {
+       margin-bottom: 19px;
+   }
+   .cuil {
+       margin-bottom: 19px;
+   }
+   .pesquisadores{
+       margin-left: 19px;
+   }
+   #pesquisadores{
+       text-align: center;
+   }
+   .pesquisadores:hover{
+       filter: grayscale();
+   }
+   .YT:hover{
+       filter: grayscale();
+   
+   }
+   #redesSociais{
+       margin-top: 10px;
+       text-align: center;
+   }
+   #amino{
+       margin-bottom: 15px;
+       padding-top: 25px;
+       margin-left: 15px;
+   }
+   #emails{
+       margin-top: 10px;
+       text-align: center;
+   }
+   .logos_larger{
+       width: 250px;
+       height: 90px;
+       margin: 25px;
+   }
+   .poitesgray:hover{
+       filter: grayscale();
+   }
+   .logos_larger:hover{
+       width: 250px;
+       height: 90px;
+       margin: 25px;
+       filter: grayscale();
+   }
+   #games{
+       text-align: center;
+   }
+   #amino:hover{
+       filter: grayscale();
+   }

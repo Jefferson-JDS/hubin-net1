@@ -1,0 +1,63 @@
+.posgame{
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+#dvgame{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+#p1 {
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+#p2 {
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+#p3 {
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+#p4 {
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+#p5{
+    border: 1px solid #000000;
+}
+#p6 {
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+#p7 { 
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+#p8 {
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+#p9 {
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+.startgame{
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: #5dce00;
+}

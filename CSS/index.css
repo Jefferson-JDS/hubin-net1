@@ -1,0 +1,72 @@
+
+body {
+    font-size: 20px;
+}
+#logo {
+    background-color: #0d0027;
+    margin-top: -20px;
+    width: 1010px;
+    margin-left: -8px;
+}
+/*#navlink{
+    background-color: #4207b2;
+    width: 1000px;
+}
+*/
+
+a.navbarlink_active{
+    font-size: 25px;   
+    text-decoration: none;
+    color: #ffc636;
+    float: right;
+    margin-top: 39px;
+    margin-right: 25px;
+}
+a.navbarlink{
+    font-size: 25px;   
+    text-decoration: none;
+    color: #00ce83;
+    float: right;
+    margin-right: 25px;
+    margin-top: 39px;
+}
+.navbarlink:hover{
+    color: #bf6a05;
+
+}
+.navbarlink_active:hover{
+    color: rgb(255, 107, 198);
+
+}
+.conteudo{
+    margin: 100px;
+    margin-top: -10px;
+    float: left;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+#sobre {
+    margin-left: 10px;
+    text-align: justify;
+}
+.suportbuton{
+    color: #360497;
+    background-color: #FFF;
+    border: 3px solid black;
+    border-radius: 10px;
+    align-self: center;
+}
+.suporte{
+    text-decoration: none;
+    font-size: 25px;
+    
+    color: #37819e;
+}
+.email{
+    display: inline;
+    color: #37819e;
+    font-size: 25px;
+}
+.iconsup{
+    margin-bottom: -22px;
+}

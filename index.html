@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <title>Hubin Net</title>
+		<link rel="icon" href="res/icon.jpg" type="image/jpg" sizes="16x16">
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="CSS/index.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/jdv.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/mi.css">
+        <link rel="stylesheet" type="text/css" href="CSS/page.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/calc.css"/>
+
+    </head>
+    <body onload="startTime()" style="background-color: #3e3e3e" id="BG">
+        <div id="cabeçalho">
+            <div id="logo">
+                <div id="topo">
+                    <p id="displayName"></p>
+                    <!--<a href="autenthication.html" class="navbarlink">LOGIN</a>
+                    <a href="register.html" class="navbarlink">REGISTRE-SE</a>-->
+                    <a href="sobre.html" class="navbarlink">SOBRE</a>
+                    <a href="index.html" class="navbarlink_active">PÁGINA ÍNICIAL</a>
+                </div>
+                <img src="res/logo01.png">
+            </div>
+            
+        </div>
+        <div id="pagcent">
+            <div id="menu">
+                <div class="datahora">
+                    <div id="hora" class="hora"></div>
+                    <div id="data" class="data"></div>
+                </div>
+                <nav class="navmenu" id="menu">
+                    <a class="navbar" href="#pesquisadores">Pesquisadores</a><br>
+                    <a class="navbar" href="#redesSociais">Rede Sociais</a><br>
+                    <a class="navbar" href="#emails">Correio Eletrônico</a><br>
+                    <a class="navbar" href="#games"> Jogos </a><br>
+                    <a class="navbar" href="#modint" title="Modo Interativo"> Modo Interativo</a><br>
+                </nav>
+            </div>
+            <div id="page">
+                <section class="pesq" id="pesquisadores">
+                    <h2>Pesquisadores</h2>
+                    <a href="https://www.google.com/" target="_blank"><img class="pesquisadores" src="res/pesq/google.png"/></a>
+                    <a href="https://br.yahoo.com/" target="_blank"><img class="pesquisadores" src="res/pesq/yahoo.png"/></a>
+                    <a href="https://www.youtube.com/?hl=pt&gl=BR" target="_blank"><img class="YT" class="pesquisadores" src="res/pesq/youtube.png"/></a>
+                    <a href="https://www.cuil.com.br/" target="_blank"><img class="pesquisadores" class="cuil" src="res/pesq/cuil.png"/></a>
+                    <br>
+                </section>
+                <hr>
+                <section class="redes" id="redesSociais">
+                    <h2>Redes Sociais</h2>
+                    <a href="https://www.facebook.com/" target="_blank"><img title="Facebook" class="logos_larger" src="res/redesociais/facebook_logo.png"></a>
+                    <a href="https://www.instagram.com/?hl=pt-br"><img class="poitesgray" title="Instagram" src="res/redesociais/insta_logo.png"></a>
+                    <a href="https://aminoapps.com/" target="_blank"><img title="Amino Apps" src="res/redesociais/amino-logo.svg" id="amino" style="background-color: #00ce83;" class="logo_larger"></a>
+                    <a href="http://twitter.com/" target="_blank"><img title="Twitter" src="res/redesociais/twitter-logo.png" class="logos_larger"></a>
+                    <a href="https://discord.com/new" target="_blank"><img class="poitesgray" title="Discord" src="res/redesociais/discord_logo.png"></a>
+                    <br>
+                    <a href="https://www.reddit.com/" target="_blank"><img class="poitesgray" title="Reddit" style="margin-left: 15px; margin-bottom: 15px;" src="res/redesociais/reddit_logo.jfif"></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img class="poitesgray" title="Whatsapp" style="margin-left: 15px; margin-bottom: 15px;" src="res/redesociais/whatsapp_logo.jfif"></a>
+                </section>
+                <hr>
+                <section class="emails" id="emails">
+                    <h2>Caixa Eletrônico</h2>
+                    <a href="https://mail.google.com/" target="_blank"><img title="Gmail" style="width: 200px; height: 95px;" class="poitesgray" src="res/emails/gmail_logo.jpg"</a>
+                    <a href="https://outlook.live.com/owa/" target="_blank"><img title="Outlook" style="width: 200px; height: 95px;" class="poitesgray" src="res/emails/outlook_logo.gif"></a>
+                </section>
+                <hr>
+                <section class="games" id="games">
+                    <h2>Games</h2>
+                    <a href="https://www.clickjogos.com.br/"" target="_blank"><img title="Click Jogos" class="poitesgray" src="res/games/clickjogos.png"></a> 
+                    <a href="https://kizi.com/" target="_blank"><img title="Kizi" class="poitesgray" src="res/games/kizilogo.jpg"></a>
+                </section>
+            </div>
+            <div class="modint" id="modint">
+                <h2>Modo Interativo</h2>
+                <div class="jogodvelha">
+                    <h3>Jogo da Velha</h3>
+                    <div id="panel">
+                        <p id="playeri"></p>
+                        <button onclick="inicia()" class="startgame">Iniciar</button>
+                        <select name="nivel" id="nivel">
+                            <option value="1" selected>Nível 1</option>
+                            <!--<option value="2">Nível 2</option>-->
+                        </select>
+                        <p> Há alguns bugs, peço perdão por isso.</p>
+
+                    </div>
+                    <div id="dvgame">
+                        <div class="posgame" onclick="jogar(1)" id="p1"></div>
+                        <div class="posgame" onclick="jogar(2)" id="p2"></div>
+                        <div class="posgame" onclick="jogar(3)" id="p3"></div>
+                        <div class="posgame" onclick="jogar(4)" id="p4"></div>
+                        <div class="posgame" onclick="jogar(5)" id="p5"></div>
+                        <div class="posgame" onclick="jogar(6)" id="p6"></div>
+                        <div class="posgame" onclick="jogar(7)" id="p7"></div>
+                        <div class="posgame" onclick="jogar(8)" id="p8"></div>
+                        <div class="posgame" onclick="jogar(9)" id="p9"></div>
+                    </div>
+                </div>
+                <h3>Tool - Calculadora</h3>
+                <div class="calc" id="calc">
+                    <form name="calcform" method="post" action="">
+                        <input type="text" name="visor" id="visor" />
+                        <table id="calc">
+                            <tr>
+                                <td><input type="button" name="num9" class="num" onclick="calcNum(9)" value="9"></td>
+                                <td><input type="button" name="num8" class="num" onclick="calNum(8)" value="8"></td>
+                                <td><input type="button" name="num7" class="num" onclick="calcNum(7)" value="7"></td>
+                                <td><input type="button" name="somar" class="oper" value="+" onclick="calcParse('somar')" /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" name="num6" class="num" onclick="calcNum(6)" value="6"></td>
+                                <td><input type="button" name="num5" class="num" onclick="calcNum(5)" value="5"></td>
+                                <td><input type="button" name="num7" class="num" onclick="calcNum(4)" value="4"></td>
+                                <td><input type="button" name="subtrair" class="oper" value="-" onclick="calcParse('subtrair')" /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" name="num3" class="num" onclick="calcNum(3)" value="3"></td>
+                                <td><input type="button" name="num2" class="num" onclick="calcNum(2)" value="2"></td>
+                                <td><input type="button" name="num1" class="num" onclick="calcNum(1)" value="1"></td>
+                                <td><input type="button" name="multiplicar" class="oper" value="*" onclick="calcParse('multiplicar')" /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" name="limpar" class="num igual ac" onclick="calcLimpar()" value="AC"></td>
+        
+                                <td><input type="button" class="num" onclick="calcNum(0)" value="0"></td>
+                                    
+                                <td><input type="button" name="igual" class="num igual ac" value="=" onclick="calcParse('resultado')" /></td>
+                                <td><input type="button" name="dividir" class="oper" value="/" onclick="calcParse('dividir')" /></td>
+                            </tr>
+                        </table>
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+         <!--Scripts-->
+         <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyC0UmPZUW17CvBVXOQy0vV7g2p8XG_46TM",
+              authDomain: "hubin-net.firebaseapp.com",
+              databaseURL: "https://hubin-net.firebaseio.com",
+              projectId: "hubin-net",
+              storageBucket: "hubin-net.appspot.com",
+              messagingSenderId: "678869477057",
+              appId: "1:678869477057:web:501bb002f1b76f14ad5640",
+              measurementId: "G-34411GLKQK"
+            };
+          
+          </script>
+       
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+        <!--Meus Scripts-->
+        <script src="scripts/jdvelha.js"></script>
+        <script src="scripts/data.js"></script>
+        <script src="scripts/calc.js"></script>
+   
+    </body>
+</html>
